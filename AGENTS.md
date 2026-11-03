@@ -203,9 +203,11 @@ print(f"测量结果: X = {val_final} ± {u_final} (单位)")
 
 ## 6. Agent 协作与代码维护要求
 
-1. **外科手术式修改（Surgical Changes）**：
+1. **严禁使用 Git 相关命令（No Git Rule）**：
+   - 严禁调用 `git` 命令（包括但不限于 `git status`, `git log`, `git diff`, `git commit`, `git checkout`, `git push` 等）。所有文件管理、对比与检查工作仅限通过代码编辑与文件系统工具进行。
+2. **外科手术式修改（Surgical Changes）**：
    - 当修复特定实验计算逻辑时，仅修改该 Notebook 对应的单元格，严禁无故重构或格式化相邻实验代码。
-2. **向后兼容**：
+3. **向后兼容**：
    - `python.utils` 为所有 Notebook 的底层依赖，修改 `utils` 内的任何函数签名或修约逻辑前，必须验证现有所有 Notebook 的运行兼容性。
-3. **无多余抽象（Simplicity First）**：
+4. **无多余抽象（Simplicity First）**：
    - 保持工具函数纯净无副作用，不引入复杂的面向对象设计或冗余的类包装，优先使用函数式数据处理流程。
