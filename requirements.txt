@@ -1,10 +1,10 @@
 # CUPE - 大物实验计算器 核心运行依赖
 
 # 数值计算与数组处理
-numpy>=1.24.0
+numpy>=2.5.4
 
 # 实验数据可视化与图表绘制
-matplotlib>=3.7.0
+matplotlib>=3.11.2
 
 # Jupyter Notebook 内核与交互运行支持
-ipykernel>=6.0.0
+ipykernel>=7.3.0
