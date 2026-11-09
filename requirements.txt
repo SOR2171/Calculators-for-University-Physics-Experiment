@@ -7,4 +7,4 @@ numpy>=2.5.4
 matplotlib>=3.11.2
 
 # Jupyter Notebook 内核与交互运行支持
-ipykernel>=7.3.0
+ipykernel>=7.4.0
